@@ -306,6 +306,27 @@ footer {
 }
 
 // --
+.mixed__outer {
+  .outer-container();
+  padding: 20px 0;
+}
+
+.mixed__list {
+  .outer-container();
+}
+
+.mixed__list__item {
+  .span-columns(3);
+  .omega(3n);
+  margin-bottom: 20px;
+  min-height: 180px;
+
+  &:nth-child(4) {
+    .shift(3);
+  }
+}
+
+// --
 .media__outer {
   .outer-container();
   padding: 20px 0;
