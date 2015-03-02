@@ -1,0 +1,29 @@
+{
+  "name": "less-neat",
+  "version": "1.0.0",
+  "description": "A semantic and fluid grid framework on top of LESS",
+  "keywords": [
+    "columns",
+    "grid",
+    "layout",
+    "media",
+    "media-queries",
+    "neat",
+    "queries",
+    "less",
+    "semantic"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Alexandr Marinenko",
+    "url": "http://codepen.io/jo-asakura/popular/"
+  },
+  "main": "stylesheets/_less-neat.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jo-asakura/less-neat.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  }
+}
