@@ -4,6 +4,8 @@
 
 // --
 
+@minWidth: 315px;
+
 // greens
 @colorTurquoise: #1abc9c;
 @colorGreenSea: #16a085;
@@ -55,6 +57,7 @@ body {
   color: @colorWhite;
   font: normal 16px/1em 'Lato';
   margin: 0;
+  min-width: @minWidth;
   padding: 0;
 }
 
@@ -78,6 +81,17 @@ body {
   min-height: 80px;
   line-height: 1.25em;
   padding: 10px;
+
+  @media only screen and (min-width: (@minWidth + 15px + 1px)) and (max-width: 500px) {
+    font-size: .85em;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
+  @media only screen and (max-width: (@minWidth + 15px)) {
+    font-size: 0;
+    padding: 0;
+  }
 }
 
 .u-buffer-bottom {
@@ -249,7 +263,14 @@ footer {
 .table__cell--4 {
   .span-columns(4, 12, table);
   .pad();
+
+  // just a visual thing
   border-right: 1px solid darken(@colorTurquoise, 5%);
+
+  // this is also visual thing
+  @media only screen and (max-width: (@minWidth + 15px)) {
+    padding-bottom: 40px;
+  }
 }
 
 .table__cell--8 {
@@ -281,7 +302,7 @@ footer {
   .span-columns(3);
   .omega(4n);
   margin-bottom: 20px;
-  min-height: 120px;
+  min-height: 140px;
 }
 
 // --
