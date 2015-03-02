@@ -12,7 +12,7 @@ If you are planning to override the default grid settings (12 columns, and etc.)
 @import "core/_local_variables";
 ```
 
-See the [demo page]() for a full list of features.
+See the [demo page](http://less-neat.azurewebsites.net/demo/index.html) for a full list of features.
 
 Let's walk through a simple example. Include the `outer-container` mixin in the topmost container (to which the `max-width` setting will be applied):
 
