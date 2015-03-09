@@ -4,7 +4,13 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta name="description" content="A semantic and fluid grid framework on top of LESS">
+    <meta name="keywords" content="columns,grid,layout,media,media-queries,neat,queries,less,semantic">
+    <meta name="author" content="Alexandr Marinenko (jo-asakura)">
+
+    <title>Less-neat by Alexandr Marinenko</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -12,14 +18,12 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Less-neat by jo-asakura</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Less-neat</h1>
+        <h1><a href="index.html">Less-neat</a></h1>
         <h2>A semantic and fluid grid framework on top of LESS</h2>
         <a href="https://github.com/jo-asakura/less-neat" class="button"><small>View project on</small> GitHub</a>
       </div>
@@ -39,11 +43,11 @@
 <h2>
 <a id="using-less-neat" class="anchor" href="#using-less-neat" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using LESS-Neat</h2>
 
-<p>If you are planning to override the default grid settings (12 columns, and etc.), it is easier to create a copy of an existing <a href="/stylesheets/core/_variables.less">_variables.less</a> file for that purpose. Make sure to replace existing import to your version of variables in <a href="/stylesheets/_less-neat.less">_less-neat.less</a>:</p>
+<p>If you are planning to override the default grid settings (12 columns, and etc.), it is easier to create a copy of an existing <a href="https://github.com/jo-asakura/less-neat/blob/master/stylesheets/core/_variables.less">_variables.less</a> file for that purpose. Make sure to replace existing import to your version of variables in <a href="https://github.com/jo-asakura/less-neat/blob/master/stylesheets/_less-neat.less">_less-neat.less</a>:</p>
 
 <div class="highlight highlight-less"><pre><span class="pl-k">@import</span> <span class="pl-s1"><span class="pl-pds">"</span>core/_local_variables<span class="pl-pds">"</span></span>;</pre></div>
 
-<p>See the <a href="http://less-neat.azurewebsites.net/demo/index.html">demo page</a> for a full list of features.</p>
+<p>See the <a href="demo.html">demo page</a> for a full list of features.</p>
 
 <p>Let's walk through a simple example. Include the <code>outer-container</code> mixin in the topmost container (to which the <code>max-width</code> setting will be applied):</p>
 
@@ -89,7 +93,7 @@
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>Copyright © 2015 Alexandr Marinenko. Neat is free software, and may be redistributed under the terms specified in the <a href="LICENSE.md">license</a>.</p>
+<p>Copyright © 2015 Alexandr Marinenko. Neat is free software, and may be redistributed under the terms specified in the <a href="https://github.com/jo-asakura/less-neat/blob/master/LICENSE">license</a>.</p>
         </section>
 
         <aside id="sidebar">
