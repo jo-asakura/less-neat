@@ -2,7 +2,7 @@
 
 ## A semantic and fluid grid framework on top of LESS
 
-LESS-Neat is a fluid grid framework built with the aim of being easy enough to use out of the box and flexible enough to customize down the road.
+[LESS-Neat](http://jo-asakura.github.io/less-neat/) is a fluid grid framework built with the aim of being easy enough to use out of the box and flexible enough to customize down the road.
 
 ## Using LESS-Neat
 
@@ -12,7 +12,7 @@ If you are planning to override the default grid settings (12 columns, and etc.)
 @import "core/_local_variables";
 ```
 
-See the [demo page](http://less-neat.azurewebsites.net/demo/index.html) for a full list of features.
+See the [demo page](http://jo-asakura.github.io/less-neat/demo.html) for a full list of features.
 
 Let's walk through a simple example. Include the `outer-container` mixin in the topmost container (to which the `max-width` setting will be applied):
 
