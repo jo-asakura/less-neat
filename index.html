@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Less-neat by jo-asakura</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Less-neat</h1>
+        <p>A semantic and fluid grid framework on top of LESS</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/jo-asakura/less-neat" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/jo-asakura/less-neat/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/jo-asakura/less-neat/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="less-neat" class="anchor" href="#less-neat" aria-hidden="true"><span class="octicon octicon-link"></span></a>LESS-Neat</h1>
+
+<h2>
+<a id="a-semantic-and-fluid-grid-framework-on-top-of-less" class="anchor" href="#a-semantic-and-fluid-grid-framework-on-top-of-less" aria-hidden="true"><span class="octicon octicon-link"></span></a>A semantic and fluid grid framework on top of LESS</h2>
+
+<p>LESS-Neat is a fluid grid framework built with the aim of being easy enough to use out of the box and flexible enough to customize down the road.</p>
+
+<h2>
+<a id="using-less-neat" class="anchor" href="#using-less-neat" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using LESS-Neat</h2>
+
+<p>If you are planning to override the default grid settings (12 columns, and etc.), it is easier to create a copy of an existing <a href="/stylesheets/core/_variables.less">_variables.less</a> file for that purpose. Make sure to replace existing import to your version of variables in <a href="/stylesheets/_less-neat.less">_less-neat.less</a>:</p>
+
+<div class="highlight highlight-less"><pre><span class="pl-k">@import</span> <span class="pl-s1"><span class="pl-pds">"</span>core/_local_variables<span class="pl-pds">"</span></span>;</pre></div>
+
+<p>See the <a href="http://less-neat.azurewebsites.net/demo/index.html">demo page</a> for a full list of features.</p>
+
+<p>Let's walk through a simple example. Include the <code>outer-container</code> mixin in the topmost container (to which the <code>max-width</code> setting will be applied):</p>
+
+<div class="highlight highlight-less"><pre><span class="pl-e">.container</span> {
+  <span class="pl-e">.outer-container</span>();
+}</pre></div>
+
+<p>Then use <code>span-columns</code> on any element to specify the number of columns it should span:</p>
+
+<div class="highlight highlight-less"><pre><span class="pl-e">.element</span> {
+  <span class="pl-e">.span-columns</span>(<span class="pl-c1">6</span>);
+}</pre></div>
+
+<p>If the element's parent isn't the top-most container, you need to add the number of columns of the parent element to keep the right proportions:</p>
+
+<div class="highlight highlight-less"><pre><span class="pl-e">.container</span> {
+  <span class="pl-e">.outer-container</span>();
+
+  <span class="pl-e">.parent-element</span> {
+    <span class="pl-e">.span-columns</span>(<span class="pl-c1">8</span>);
+
+    <span class="pl-e">.element</span> {
+      <span class="pl-e">.span-columns</span>(<span class="pl-c1">6</span>,<span class="pl-c1"> 8</span>);
+    }
+  }
+}</pre></div>
+
+<p>To make your layout responsive, use the LESS built-in nested media queries functionality to modify both the grid and the layout:</p>
+
+<div class="highlight highlight-less"><pre><span class="pl-e">.container</span> {
+  <span class="pl-e">.span-columns</span>(<span class="pl-c1">4</span>);
+
+  <span class="pl-vo">@media</span> (<span class="pl-s3">min-width</span>:<span class="pl-c1"> 768</span><span class="pl-k">px</span>) {
+    <span class="pl-e">.span-columns</span>(<span class="pl-c1">2</span>);
+  }
+}</pre></div>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>LESS-Neat is created and maintained by Alexandr Marinenko. The project is heavily inspired by amazing Sass framework <a href="http://neat.bourbon.io">Bourbon Neat</a>. Tweet your questions or suggestions to @jo_asakura.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright © 2015 Alexandr Marinenko. Neat is free software, and may be redistributed under the terms specified in the <a href="LICENSE.md">license</a>.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/jo-asakura">jo-asakura</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
