@@ -64,4 +64,4 @@ LESS-Neat is created and maintained by Alexandr Marinenko. The project is heavil
 
 ## License
 
-Copyright © 2015 Alexandr Marinenko. Neat is free software, and may be redistributed under the terms specified in the [license](LICENSE).
+Copyright © 2015 Alexandr Marinenko. LESS-Neat is free software, and may be redistributed under the terms specified in the [license](LICENSE).
