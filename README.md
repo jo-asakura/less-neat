@@ -60,7 +60,7 @@ To make your layout responsive, use the LESS built-in nested media queries funct
 
 ## Credits
 
-LESS-Neat is created and maintained by Alexandr Marinenko. The project is heavily inspired by amazing Sass framework [Bourbon Neat](http://neat.bourbon.io). Tweet your questions or suggestions to @jo_asakura.
+LESS-Neat is created and maintained by Alexandr Marinenko. The project is heavily inspired by amazing Sass framework [Bourbon Neat](http://neat.bourbon.io). Tweet your questions or suggestions to [@jo_asakura](https://twitter.com/jo_asakura).
 
 ## License
 
